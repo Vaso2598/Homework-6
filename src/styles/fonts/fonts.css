@@ -84,3 +84,12 @@
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
+
+.open-sans-bold {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
