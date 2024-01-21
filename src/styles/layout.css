@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+
+/* Flex */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/* Gap */
+
+.gap-13{
+    gap: 13.31rem;
+}
+
+.gap-30{
+    gap: 1.88rem;
+}
+
+.gap-180{
+    gap: 11.25rem;
+}
+
+/* Margins */
+
+.mt-75{
+    margin-top: 4.69rem;
+}
+
+.mt-47{
+    margin-top: 2.94rem;
+}
+
+.mt-200{
+    margin-top: 13.75rem;
+}
+
+/* Other styles */
+
+.decoration-none{
+    text-decoration: none;
+}

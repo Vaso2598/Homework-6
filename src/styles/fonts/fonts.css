@@ -1,0 +1,86 @@
+/* Playfair Display */
+
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-86px{
+    color: #2F2E41;
+    font-size: 5.375rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.0625rem;
+}
+
+.font-60px{
+    color: #2F2E41;
+    font-size: 3.75rem;
+    line-height: 4rem;
+    letter-spacing: -0.0625rem;
+}
+
+.font-50px{
+    color: #2F2E41;
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+}
+
+.font-40px{
+    color: #2F2E41;
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+}
+
+.font-34px{
+    color: #2F2E41;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+}
+
+.font-28px{
+    color: #2F2E41;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+}
+
+/* Open Sans */
+
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.open-sans-semiBold{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.font-20px{
+    font-size: 1.125rem;
+    line-height: 2.125rem;
+}
+
+.font-18px{
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+.font-16px{
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.font-18px-semiBold {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
