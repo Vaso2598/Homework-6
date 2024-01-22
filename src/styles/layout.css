@@ -1,110 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
+@media (min-width: 800px){
+    
+    /* Flex */
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .justify-center{
+        justify-content: center;
+    }
+
+    .justify-start {
+        justify-content:flex-start;
+    }
+
+    .justify-between{
+        justify-content: space-between;
+    }
+
+    .justify-around{
+        justify-content: space-around;
+    }
+
+    .align-center{
+        align-items: center;
+    }
+
+    .align-start {
+        align-items: flex-start;
+    }
+
+    /* Gap */
+
+    .gap-16{
+        gap: 1rem;
+    }
+
+    .gap-24{
+        gap: 1.5rem;
+    }
+
+    .gap-30{
+        gap: 1.88rem;
+    }
+
+    .gap-36{
+        gap: 2.25rem;
+    }
+
+    .gap-50{
+        gap: 3.06rem;;
+    }
+
+    .gap-180{
+        gap: 11.25rem;
+    }
+
+    .gap-212{
+        gap: 13.31rem;
+    }
+
+    /* Margins */
+
+    .m-0{
+        margin: 0;
+    }
+
+    .mt-75{
+        margin-top: 4.69rem;
+    }
+
+    .mt-47{
+        margin-top: 2.94rem;
+    }
+
+    .mt-220{
+        margin-top: 13.75rem;
+    }
+
+    /* Padding */
+
+    .py-130{
+        padding-left: 8.06rem;
+        padding-right: 8.06rem;
+    }
+
+    .py-270{
+        padding-left: 17rem;
+        padding-right: 17rem;
+    }
+
+    /* Other styles */
+
+    .decoration-none{
+        text-decoration: none;
+    }
+
+    .burger{
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
 
-/* Flex */
+/* Ipad mini */
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
+@media (max-width: 800px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.75rem 2.5rem;
+    }
 
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
+    .burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        visibility: visible;
+        width: 1.5625rem;
+        height: 1.1875rem;
+        position: relative;
+    }
 
-.justify-center{
-    justify-content: center;
-}
+    .line{
+        display: flex;
+        width: 1.5625rem;
+        height: 0.1875rem;
+        flex-shrink: 0;
+        background-color: #6C63FF;
+    }
 
-.justify-start {
-    justify-content:flex-start;
-}
+    .burger-menu{
+        
+    }
 
-.justify-between{
-    justify-content: space-between;
-}
+    .menu, .buttons{
+        display: none;
+        visibility: hidden;
+    } 
 
-.justify-around{
-    justify-content: space-around;
-}
+    .hero{
+        display: flex;
+        flex-direction: column;
+        gap: 1.88;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 3.47rem;
+    }
 
-.align-center{
-    align-items: center;
-}
+    .sponsors{
+        display: flex;
+        justify-content: space-between;
+        gap: 2.87rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 6.68rem;
+    }
 
-.align-start {
-    align-items: flex-start;
-}
+    .examination{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:3.12rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 8.75rem;
+    }
 
-/* Gap */
-
-.gap-16{
-    gap: 1rem;
-}
-
-.gap-24{
-    gap: 1.5rem;
-}
-
-.gap-30{
-    gap: 1.88rem;
-}
-
-.gap-36{
-    gap: 2.25rem;
-}
-
-.gap-50{
-    gap: 3.06rem;;
-}
-
-.gap-180{
-    gap: 11.25rem;
-}
-
-.gap-212{
-    gap: 13.31rem;
-}
-
-/* Margins */
-
-.m-0{
-    margin: 0;
-}
-
-.mt-75{
-    margin-top: 4.69rem;
-}
-
-.mt-47{
-    margin-top: 2.94rem;
-}
-
-.mt-220{
-    margin-top: 13.75rem;
-}
-
-/* Padding */
-
-.py-130{
-    padding-left: 8.06rem;
-    padding-right: 8.06rem;
-}
-
-.py-270{
-    padding-left: 17rem;
-    padding-right: 17rem;
-}
-
-/* Other styles */
-
-.decoration-none{
-    text-decoration: none;
-}
-
-.list-none{
-    list-style: none;
+    .examination.gap-24{
+        gap: 1.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
 }
