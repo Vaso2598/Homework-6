@@ -6,33 +6,30 @@
 		<link rel="stylesheet" href="./src/styles/app.css" />
 		<title>fusely</title>
 	</head>
-	<body>
+	<body class="site-center">
 		<header>
-			<nav class="burger-menu navbar flex-row justify-between align-center gap-213 py-130">
+			<nav class="navbar flex-row justify-between align-center gap-213 py-130">
 				<a href="#">
-					<img src="src/styles/images/Logo_fusely_medium.svg" alt="Logo fusely" />
+					<img src="./src/styles/images/Logo_fusely_medium.svg" alt="Logo fusely" />
 				</a>
-				<ul class="menu flex-row justify-between gap-36">
+				<label for="menu" tabindex="0"><img src="./src/styles/images/Menu_Button.svg" alt="menu" /></label>
+				<input id="menu" type="checkbox" />
+				<ul class="flex-row justify-between gap-36">
 					<li><a class="open-sans-bold font-16px decoration-none black-3" href="#">Home</a></li>
 					<li><a class="open-sans-bold font-16px decoration-none black-3" href="#">Features</a></li>
 					<li><a class="open-sans-bold font-16px decoration-none black-3" href="#">Pricing</a></li>
 					<li><a class="open-sans-bold font-16px decoration-none black-3" href="#">Blog</a></li>
 					<li><a class="open-sans-bold font-16px decoration-none black-3" href="#">Contact</a></li>
-				</ul>
-				<div class="flex-row justify-between gap-16">
-					<button class="buttons open-sans-bold btn-outline-medium">Log in</button>
-					<button class="buttons open-sans-bold btn-primary-medium">Get Started</button>
-					<div class="burger">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
+					<div class="menu-btns flex-row justify-between gap-16">
+						<button class="buttons open-sans-bold btn-outline-medium">Log in</button>
+						<button class="buttons open-sans-bold btn-primary-medium">Get Started</button>
 					</div>
-				</div>
+				</ul>
 			</nav>
 		</header>
 		<main>
 			<section class="hero flex-row justify-between mt-75 gap-50 py-130">
-				<div class="flex-column justify-around align-start gap-30">
+				<div class="hero-text flex-column justify-around align-start gap-30">
 					<div class="playfair-display font-86px black-1">
 						<h1>Let’s get fusely together</h1>
 					</div>
@@ -47,31 +44,31 @@
 					</div>
 				</div>
 				<div>
-					<img src="/src/styles/images/Hero_image.svg" alt="Illustration" />
+					<img src="./src/styles/images/Hero_image.svg" alt="Illustration" />
 				</div>
 			</section>
 			<section class="sponsors flex-row justify-between mt-47 py-270">
 				<div>
-					<img src="/src/styles/images/binator_logo.svg" alt="" />
+					<img src="./src/styles/images/binator_logo.svg" alt="" />
 				</div>
 				<div>
-					<img src="/src/styles/images/buyme_logo.svg" alt="" />
+					<img src="./src/styles/images/buyme_logo.svg" alt="" />
 				</div>
 				<div>
-					<img src="/src/styles/images/loogipsum_logo.svg" alt="" />
+					<img src="./src/styles/images/loogipsum_logo.svg" alt="" />
 				</div>
 				<div>
-					<img src="/src/styles/images/umbrella_logo.svg" alt="" />
+					<img src="./src/styles/images/umbrella_logo.svg" alt="" />
 				</div>
 				<div>
-					<img src="/src/styles/images/square_logo.svg" alt="" />
+					<img src="./src/styles/images/square_logo.svg" alt="" />
 				</div>
 			</section>
 			<section class="examination flex-row justify-between mt-220 gap-180 py-130">
 				<div>
-					<img src="/src/styles/images/Illustration.svg" alt="" />
+					<img src="./src/styles/images/Illustration.svg" alt="" />
 				</div>
-				<div class="flex-column align-start gap-24">
+				<div class="examination flex-column align-start gap-24">
 					<div class="playfair-display font-60px black-1">
 						<h2>Detailed Examination</h2>
 					</div>

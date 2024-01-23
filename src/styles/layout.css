@@ -1,4 +1,4 @@
-@media (min-width: 800px){
+@media (min-width: 768px){
     
     /* Flex */
 
@@ -107,48 +107,69 @@
         width: 0;
         height: 0;
     }
+
+    .site-center{
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    nav input[type='checkbox'],
+    nav label {
+        display: none;
+    }
 }
 
 /* Ipad mini */
 
-@media (max-width: 800px){
+@media (max-width: 768px){
+    /* Header */
     .navbar{
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 0.75rem 2.5rem;
+        flex-wrap: wrap;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
-    .burger{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        visibility: visible;
-        width: 1.5625rem;
-        height: 1.1875rem;
-        position: relative;
+    .navbar ul li, .navbar .menu-btns{
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
     }
-
-    .line{
-        display: flex;
-        width: 1.5625rem;
-        height: 0.1875rem;
-        flex-shrink: 0;
-        background-color: #6C63FF;
-    }
-
-    .burger-menu{
-        
-    }
-
-    .menu, .buttons{
+    
+    input[type='checkbox']:not(:checked)+ul {
         display: none;
-        visibility: hidden;
-    } 
+    }
+
+    input[type='checkbox']:not(:checked)+.menu-btns {
+        display: none;
+    }
+
+    nav label {
+        text-align: right;
+        display: block;
+        padding-left: 2.5rem;
+        align-self: center;
+    }
+
+    nav input[type='checkbox']{
+        display: none;
+    }
+
+/* main */
 
     .hero{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        gap: 1.88;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         gap: 1.88;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -173,9 +194,62 @@
         margin-top: 8.75rem;
     }
 
-    .examination.gap-24{
+    .examination .gap-24{
         gap: 1.5rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
 }
+
+/* mobile */
+
+@media (max-width: 428px){
+    *{
+        margin-top: 20;
+        margin-left: 20;
+        margin-right: 20;
+    }
+
+    nav{
+        display: flex;
+        width: 388px;
+        padding: 12px 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .sponsors{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 45px;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 80px;
+    }
+
+    .examination {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px;
+    }
+
+    .examination .gap-24 {
+        gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
